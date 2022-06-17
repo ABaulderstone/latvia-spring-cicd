@@ -20,14 +20,20 @@ public class MathControllerTest {
 		assertEquals(expected, result);
 	}
 	
-	@Test()
+	@Test
 	public void rectanglePerimeterShouldThrowWhenArgNull() {
 		Integer height = 100;
 		Integer width =  null;
 		assertThrows(NullPointerException.class, () -> {
 			controller.rectanglePerimeter(height, width);
 		});
-
+	
+	@Test
+	public void circleAreaShouldReturnCorrectArea() {
+		Double r = 2d;
+		Double result = controller.circleArea(r);
+		assertEquals(12, result);
+		
 	}
 
 }

@@ -13,6 +13,11 @@ public class MathController {
 	public Integer rectanglePerimeter(@PathVariable Integer height, @PathVariable Integer width) { 
 		return (height + width ) * 2;
 	}
+	
+	@GetMapping(value = "/circle/area/{r}") 
+	public Double circleArea(@PathVariable Double r) {
+		return 3.14 * Math.pow(r, 2);
+	}
 
 }
  
