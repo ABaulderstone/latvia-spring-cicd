@@ -27,8 +27,8 @@ public class MathControllerTest {
     Integer height = 100;
     Integer width = null;
     assertThrows(
-      NullPointerException.class,
-      () -> {
+        NullPointerException.class,
+        () -> {
         controller.rectanglePerimeter(height, width);
       }
     );

@@ -11,8 +11,8 @@ public class MathController {
 
   @GetMapping(value = "/rectangle/perimeter/{height}/{width}")
   public Integer rectanglePerimeter(
-    @PathVariable Integer height,
-    @PathVariable Integer width
+      @PathVariable Integer height,
+      @PathVariable Integer width
   ) {
     return (height + width) * 2;
   }
